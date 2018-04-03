@@ -60,47 +60,7 @@ $(document).ready(function() {
     }
     console.log(finalPrice);
 
-    $(".ticket-price").text(finalPrice);
+    $("#ticket-price").text(finalPrice);
     $(".results").show();
   });
-});
-
-
-
-$(document).ready(function() {
-  $("#bank-account-creation").submit(function(event){
-    event.preventDefault();
-
-    var userName = $("#user-name").val();
-    var userInitialDeposit = parseFloat($("#user-initial-deposit").val());
-
-    newAccount = new Account(userName, userInitialDeposit);
-
-    console.log(newAccount)
-
-    $(".display-balance").text(newAccount.balance);
-    $(".display-name").text(newAccount.name);
-    $(".current-balance").show();
-
-  });
-
-
-// <--- Transfer Form --->
-  $("#bank-account-transfer").submit(function(event){
-    event.preventDefault();
-
-    var userDeposit = parseFloat($("#user-deposit").val());
-    var userWithdraw = parseFloat($("#user-withdraw").val());
-
-    // newAccount.balance.Withdraw(userWithdraw);
-    newAccount.deposit(userDeposit);
-    newAccount.withdraw(userWithdraw);
-
-
-    $(".display-balance").text(newAccount.balance);
-    $(".display-name").text(newAccount.name);
-
-    console.log(newAccount)
-  });
-
 });
