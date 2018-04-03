@@ -9,6 +9,7 @@
   <title>Movie Ticket</title>
 </head>
 <body>
+  <form id="movie-form">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -17,31 +18,64 @@
 
       <div class="col-md-3 well well-lg">
         <img src="img/Few-Goodman.jpg" alt="">
-          </div>
+      </div>
 
-        <div class="col-md-3 well well-lg">
-          <img src="img/harry-otter.jpg" alt="">
+      <div class="col-md-3 well well-lg">
+        <img src="img/harry-otter.jpg" alt="">
       </div>
 
       <div class="col-md-3 well well-lg">
         <img src="img/harry-sully.jpg" alt="">
-          </div>
+      </div>
 
       <div class="col-md-3 well well-lg">
         <img src="img/Home-Alone.png" alt="">
-          </div>
-
-        <div class="col-md-12">
-          <h4>Ticket Price: </h4>
-          <br>
-          <div class="results">
-            <p>$<span class="ticket-price"></span></p>
-          </div>
-        </div>
-
       </div>
-      <!-- End of Row -->
+
+      <div class="col-md-3 well well-lg">
+        <input type="radio" name="movie" value="a-few-goodmen"> A Few Goodmen<br>
+      </div>
+
+      <div class="col-md-3 well well-lg">
+        <input type="radio" name="movie" value="harry-otter"> Harry Otter<br>
+      </div>
+
+      <div class="col-md-3 well well-lg">
+        <input type="radio" name="movie" value="harry-met-sully"> When Harry Met Sully<br>
+      </div>
+
+      <div class="col-md-3 well well-lg">
+        <input type="radio" name="movie" value="home-alone"> Home Alone: Road to Forgiveness<br>
+      </div>
+
+      <div class="col-md-12">
+        <p>Time of show:</p>
+        <select id="show-times" name="show-times">
+            <option value="13">1PM</option>
+            <option value="15">3PM</option>
+            <option value="19">7PM</option>
+            <option value="22">10PM</option>
+        </select>
+
+        <p>Age:</p>
+        <input type="text" id="age-input">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+      <div class="col-md-12">
+        <h4>Ticket Price: </h4>
+        <br>
+        <div class="results">
+          <p>$<span class="ticket-price"></span></p>
+        </div>
+      </div>
+
     </div>
-    <!-- End of Container -->
-  </body>
+    <!-- End of Row -->
+  </div>
+  <!-- End of Container -->
+</body>
 </html>
