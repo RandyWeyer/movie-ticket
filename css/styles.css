@@ -1,0 +1,18 @@
+h4 {
+  padding: 20px auto 10px auto;
+  font-weight: bold;
+}
+
+img {
+  max-width: 275px;
+  padding: 20px;
+}
+
+
+.movie-header {
+  margin: 50px auto 30px auto;
+}
+
+.ticket-price {
+  display: none;
+}
